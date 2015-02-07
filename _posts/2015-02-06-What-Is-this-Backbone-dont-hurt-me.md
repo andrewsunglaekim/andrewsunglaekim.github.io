@@ -72,7 +72,9 @@ Let's first fill our `js/app.js` so we can establish a name space and instantiat
 In `js/app.js`:
 
 {% highlight javascript %}
-// Right here, we're going to name space all of our models, collections, Views and Routers in an App object so we don't pollute the global namespace
+// Right here, we're going to name space all of our models, 
+// collections, Views and Routers in an App object so we don't 
+// pollute the global namespace
 App = {
   Models: {},
   Collections: {},
@@ -80,7 +82,8 @@ App = {
   Routers: {}
 }
 
-// We don't want to instantiate our Router until all the other files have loaded.
+// We don't want to instantiate our Router until all the other 
+// files have loaded.
 $(document).ready(function(){
   App.Routers.main = new App.Routers.Main();
   Backbone.history.start();
@@ -100,7 +103,8 @@ App.Models.Reminder = Backbone.Model.extend({
 
 In `js/collections/reminders.js`:
 {% highlight javascript %}
-// This is our Reminders Collection Object that will contain instances of our Reminder Model Object
+// This is our Reminders Collection Object that will contain instances 
+// of our Reminder Model Object
 App.Collections.Reminders = Backbone.Collection.extend({
   model: App.Models.Reminder
 })
@@ -115,11 +119,13 @@ In `js/routers/reminder_router.js`:
 // This is our applications main and only router.
 App.Routers.Main = Backbone.Router.extend({
 
-  // here's where you can route to specific urls, we won't be going over that in this post
+  // here's where you can route to specific urls, we won't be going 
+  // over that in this post
   routes: {
   },
 
-  // Upon initialize we'll instantiate our reminders Collection and Collection View
+  // Upon initialize we'll instantiate our reminders Collection and 
+  // Collection View
   initialize: function(){
     App.Collections.reminders = new App.Collections.Reminders();
 
@@ -142,7 +148,8 @@ Next we will be working on the views. We will have the constructor functions for
 In `js/views/reminder_view.js`:
 
 {% highlight javascript %}
-// This is the constructor function for our Backbone Item View for our reminder objects
+// This is the constructor function for our Backbone Item View for 
+// our reminder objects
 App.Views.ReminderView = Backbone.View.extend({
 	
   // gives this $el a class name of reminder
@@ -177,15 +184,18 @@ In `js/views/reminders_view.js`:
 // This is the constructor function for our Backbone list view
 App.Views.RemindersView = Backbone.View.extend({
 	
-  // declare the domain of the view, in this case div with class reminder_container
+  // declare the domain of the view, in this case div with class
+  // reminder_container
   el: ".reminder_container",
 
-  // click event when new reminder is submitted to run the callback, newReminder
+  // click event when new reminder is submitted to run the callback, 
+  // newReminder
   events: {
     'click input.new_reminder': 'newReminder'
   },
 
-  // when a new list view is created adds a listener to when the Collection adds another model also calls addAll function on itself
+  // when a new list view is created adds a listener to when the Collection 
+  // adds another model also calls addAll function on itself
   initialize: function(){
     this.listenTo(this.collection, 'add', this.addOne)
     this.addAll();

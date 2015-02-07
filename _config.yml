@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Andrew Kim
 locale:           en_US
 url:              
 
@@ -26,13 +26,13 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
+  name: Andrew Kim
+  avatar: profile_pic_1.jpg
+  bio: A Full Stack Web Developer
   email: 
   disqus-shortname: 
-  twitter: #username
-  facebook: #username
+  twitter: andrew_kim12
+  facebook: andrew.kim.121398
   google:
     plus: #username
     analytics: 
@@ -40,8 +40,8 @@ owner:
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
+  github: andrewsunglaekim
+  stackoverflow: http://stackoverflow.com/users/4008366/andrew-kim
   linkedin: #username
   instagram: #username
   lastfm: #username

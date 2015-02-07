@@ -9,3 +9,7 @@ image:
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
+
+Portfolio coming soon!
+
+For now look at my poorly organized [Github](github.com/andrewsunglaekim)!

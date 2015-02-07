@@ -12,4 +12,4 @@ image:
 
 Portfolio coming soon!
 
-For now look at my poorly organized [Github](github.com/andrewsunglaekim)!
+> For now look at my poorly organized [Github](github.com/andrewsunglaekim)!

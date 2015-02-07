@@ -135,14 +135,14 @@ App.Routers.Main = Backbone.Router.extend({
 })	
 {% endhighlight %}
 
-Next we will be working on the views. We will have the Item View(the view for each individual reminder) and the List View(the view for the collection of reminders, which is comprised of Item Views)
+Next we will be working on the views. We will have the constructor functions for the Item View(the view for each individual reminder) and the List View(the view for the collection of reminders, which is comprised of Item Views)
 
 > The next two js files is where everything is happening and probably the most important of all the others.
 
 In `js/views/reminder_view.js`:
 
 {% highlight javascript %}
-// This is our Item View for our reminder objects
+// This is the constructor function for our Item View for our reminder objects
 App.Views.ReminderView = Backbone.View.extend({
 	
   // gives this $el a class name of reminder
@@ -174,7 +174,7 @@ App.Views.ReminderView = Backbone.View.extend({
 In `js/views/reminders_view.js`:
 
 {% highlight javascript %}
-// This is our list view
+// This is the constructor function for our list view
 App.Views.RemindersView = Backbone.View.extend({
 	
   // declare the domain of the view, in this case div with class reminder_container

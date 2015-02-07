@@ -17,6 +17,7 @@ Lets make a new directory where we want to work from and make some directories a
     $ mkdir js/collections
     $ mkdir js/views
     $ mkdir js/routers
+    $ touch ./index.html
     $ touch js/models/reminder.js
     $ touch js/collections/reminders.js
     $ touch js/views/reminder_view.js

@@ -108,7 +108,7 @@ App.Collections.Reminders = Backbone.Collection.extend({
 
 Next we will be creating the constructor function for our Backbone Router. Where we initialize our collection and collection view(also list view). 
 
-> Note, this programs functionality will be limited; however, should you want people to bookmark your site in different states, alot of that code would go here. In the future, I may write another post that focuses more on routers and their uses. It is much more robust than the marginal utility that is seen in this program.
+> Note, this programs functionality will be limited; however, should you want people to bookmark your site in different states, alot of that code would go here. In the future, I may write another post that focuses more on routers and their uses. It is much more robust than the marginal utility that is seen in this program where it's just used to instantiate our Backbone objects.
 
 In `js/routers/reminder_router.js`:
 {% highlight javascript %}
@@ -142,7 +142,7 @@ Next we will be working on the views. We will have the constructor functions for
 In `js/views/reminder_view.js`:
 
 {% highlight javascript %}
-// This is the constructor function for our Item View for our reminder objects
+// This is the constructor function for our Backbone Item View for our reminder objects
 App.Views.ReminderView = Backbone.View.extend({
 	
   // gives this $el a class name of reminder
@@ -174,7 +174,7 @@ App.Views.ReminderView = Backbone.View.extend({
 In `js/views/reminders_view.js`:
 
 {% highlight javascript %}
-// This is the constructor function for our list view
+// This is the constructor function for our Backbone list view
 App.Views.RemindersView = Backbone.View.extend({
 	
   // declare the domain of the view, in this case div with class reminder_container

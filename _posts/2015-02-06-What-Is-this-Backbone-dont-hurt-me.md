@@ -6,7 +6,7 @@ excerpt: Rudimentary OOJS
 
 In class [@GA_DC](https://twitter.com/GA_DC), we just "learned" backbone. Although the teachers did an amazing job, it's just really hard to learn your very first JS framework. In addition to that, because of time constraints we were only able to have about an hour of instructional time on Object Oriented JS prior to the introduction of backbone. So my natural inclination will be to try and learn it better by writing this post. I wanted to go a different direction but my buddy from class convinced me to use the title above. Thanks [@CityLims](https://twitter.com/CityLims) for the title buddy.
 
-> In this post, we're going to be making a one page app. We're going to call it Reminders, but lets be honest, its a todo App. This post will require knowledge of JS, jQuery, DOM elements and HTML. I'll be using Backbone's MV*(Presenter) for basic create and delete functionality for reminders in our reminders app. Also, there will be lots of code, and the comments throughout will probably explain more than the blurbs in between code. Alrighty, so lets get to it.
+> In this post, we're going to be making a one page app. We're going to call it Reminders, but lets be honest, its a [todo App](http://todomvc.com/). This post will require knowledge of JS, jQuery, DOM elements and HTML. I'll be using Backbone's MV*(Presenter) for basic create and delete functionality for reminders in our reminders app. Also, there will be lots of code, and the comments throughout will probably explain more than the blurbs in between code. Alrighty, so lets get to it.
 
 
 Lets make a new directory where we want to work from and make some directories and files were going to need, in the terminal:

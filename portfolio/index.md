@@ -20,14 +20,14 @@ image:
 <h2>Drizz.ly</h2>
 <img src="/images/drizzly.png">
 
-> Drizzly was a group mini project that we developed in less than 12 hours. It's built on Rails and utilizes the weather underground API. After about a week of instruction on javascript, our group utilized the newly garnered asset to make a single page app that gives weather information based on search parameters and/or IP location.
+> Drizzly was a group mini project that we developed in less than 12 hours. It's built on Rails and utilizes the weather underground API. After about a week of instruction on javascript, our group utilized the newly garnered asset to make a single page app that gives weather information based on search parameters and/or IP location. My role in the group was to handle user authentication/backend data. I also synced the backend with the front end using JS.
 
 [Drizzly](https://drizzly.herokuapp.com/). The code can be found [here](https://github.com/andrewsunglaekim/drizzly)
 
 <h2>Pointless Twitter Game</h2>
 <img src="/images/twitter_game.png">
 
-> The Pointless Twitter Game was a group project that was developed in the 9th week at General Assembly. It's built on Rails and utilizes the Twitter Rest API. Although mostly just a single page application, it utilizes object oriented JS and prototypical inheritance. Also utilizes heroku scheduler as a background worker to update the quiz's database on an hourly basis. 
+> The Pointless Twitter Game was a group project that was developed in the 9th week at General Assembly. It's built on Rails and utilizes the Twitter Rest API. Although mostly just a single page application, it utilizes object oriented JS and prototypical inheritance. Also utilizes heroku scheduler as a background worker to update the quiz's database on an hourly basis. My role in the project was code maintainer, co-lead, backend/user auth and much of the JS front end.
 
 [Pointless Twitter Game](https://pointless-twitter-game.herokuapp.com/). The code can be found [here](https://github.com/andrewsunglaekim/twitter_game)
 

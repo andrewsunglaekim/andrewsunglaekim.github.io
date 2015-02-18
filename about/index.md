@@ -17,11 +17,13 @@ I'm a full stack web developer. Passionate about new technologies and striving t
 * Ruby
 * Ruby on Rails/Active Record ORM
 * Sinatra
+* Wordpress
 * Git
 * Rspec/Minitest/Jasmine
 * SQL/postgreSQL
 *	Javascript/jQuery/AJAX
 * Backbone JS
 * HTML/CSS
+* SASS/SCSS
 * CLI
 * more cool schtuff to follow fo sho

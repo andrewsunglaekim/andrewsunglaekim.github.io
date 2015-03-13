@@ -10,7 +10,7 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-I'm a full stack web developer. Passionate about new technologies and striving to learn as much as possible. Currently a Junior Instructor at the Web Development Immersive at General Assembly.
+I'm a full stack web developer. Passionate about new technologies and striving to learn as much as possible. Currently a Junior Instructor for the Web Development Immersive at General Assembly.
 
 ## Resume
 [My Resume]({{ site.url }}/assets/andrew_kim_resume.pdf)

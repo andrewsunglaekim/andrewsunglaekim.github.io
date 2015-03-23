@@ -29,6 +29,7 @@ class Person
   end
 end
 
+# when we create a new instance of a class, the initialize method defined in the class is called
 bob = Person.new
 puts bob
 {% endhighlight %}

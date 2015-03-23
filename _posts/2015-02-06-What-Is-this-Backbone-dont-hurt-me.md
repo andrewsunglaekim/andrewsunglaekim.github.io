@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is this? Backbone Don't Hurt Me
-excerpt: Rudimentary OOJS
+excerpt: Rudimentary Backbone
 ---
 
 In class [@GA_DC](https://twitter.com/GA_DC), we just "learned" backbone. Although the teachers did an amazing job, it's just really hard to learn your very first JS framework. In addition to that, because of time constraints we were only able to have about an hour of instructional time on Object Oriented JS prior to the introduction of backbone. So my natural inclination will be to try and learn it better by writing this post. I wanted to go a different direction but my buddy from class convinced me to use the title above. Thanks [@CityLims](https://twitter.com/CityLims) for the title buddy.
@@ -25,7 +25,7 @@ Lets make a new directory where we want to work from and make some directories a
     $ touch js/routes/reminder_router.js
 
 
-Now we're going to create our skeleton, add our dependencies, and some basic HTML elements, in our `index.html`: 
+Now we're going to create our skeleton, add our dependencies, and some basic HTML elements, in our `index.html`:
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -69,12 +69,12 @@ Now we're going to create our skeleton, add our dependencies, and some basic HTM
 </html>
 {% endhighlight %}
 
-Let's first fill our `js/app.js` so we can establish a name space and instantiate our Router which we will define later. 
+Let's first fill our `js/app.js` so we can establish a name space and instantiate our Router which we will define later.
 In `js/app.js`:
 
 {% highlight javascript %}
-// Right here, we're going to name space all of our models, 
-// collections, Views and Routers in an App object so we don't 
+// Right here, we're going to name space all of our models,
+// collections, Views and Routers in an App object so we don't
 // pollute the global namespace
 App = {
   Models: {},
@@ -83,7 +83,7 @@ App = {
   Routers: {}
 }
 
-// We don't want to instantiate our Router until all the other 
+// We don't want to instantiate our Router until all the other
 // files have loaded.
 $(document).ready(function(){
   App.Routers.main = new App.Routers.Main();
@@ -104,14 +104,14 @@ App.Models.Reminder = Backbone.Model.extend({
 
 In `js/collections/reminders.js`:
 {% highlight javascript %}
-// This is our Reminders Collection Object that will contain instances 
+// This is our Reminders Collection Object that will contain instances
 // of our Reminder Model Object
 App.Collections.Reminders = Backbone.Collection.extend({
   model: App.Models.Reminder
 })
 {% endhighlight %}
 
-Next we will be creating the constructor function for our Backbone Router. Where we initialize our collection and collection view(also list view). 
+Next we will be creating the constructor function for our Backbone Router. Where we initialize our collection and collection view(also list view).
 
 > Note, this programs functionality will be limited; however, should you want people to bookmark your site in different states, alot of that code would go here. In the future, I may write another post that focuses more on routers and their uses. It is much more robust than the marginal utility that is seen in this program where it's just used to instantiate our Backbone objects.
 
@@ -120,18 +120,18 @@ In `js/routers/reminder_router.js`:
 // This is our applications main and only router.
 App.Routers.Main = Backbone.Router.extend({
 
-  // here's where you can route to specific urls, we won't be going 
+  // here's where you can route to specific urls, we won't be going
   // over that in this post
   routes: {
   },
 
-  // Upon initialize we'll instantiate our reminders Collection and 
+  // Upon initialize we'll instantiate our reminders Collection and
   // Collection View
   initialize: function(){
     App.Collections.reminders = new App.Collections.Reminders();
 
     App.Views.reminderListView = new App.Views.RemindersView({ collection: App.Collections.reminders})
-		
+
 
     // Add Some dummy content so the page loads with some stuff.
     App.Collections.reminders.reset();
@@ -139,7 +139,7 @@ App.Routers.Main = Backbone.Router.extend({
     App.Collections.reminders.add({reminderBody: "learn backbone"})
     App.Collections.reminders.add({reminderBody: "be happy"})
   }
-})	
+})
 {% endhighlight %}
 
 Next we will be working on the views. We will have the constructor functions for the Item View(the view for each individual reminder) and the List View(the view for the collection of reminders, which is comprised of Item Views)
@@ -149,10 +149,10 @@ Next we will be working on the views. We will have the constructor functions for
 In `js/views/reminder_view.js`:
 
 {% highlight javascript %}
-// This is the constructor function for our Backbone Item View for 
+// This is the constructor function for our Backbone Item View for
 // our reminder objects
 App.Views.ReminderView = Backbone.View.extend({
-	
+
   // gives this $el a class name of reminder
   className: 'reminder',
 
@@ -184,18 +184,18 @@ In `js/views/reminders_view.js`:
 {% highlight javascript %}
 // This is the constructor function for our Backbone list view
 App.Views.RemindersView = Backbone.View.extend({
-	
+
   // declare the domain of the view, in this case div with class
   // reminder_container
   el: ".reminder_container",
 
-  // click event when new reminder is submitted to run the callback, 
+  // click event when new reminder is submitted to run the callback,
   // newReminder
   events: {
     'click input.new_reminder': 'newReminder'
   },
 
-  // when a new list view is created adds a listener to when the Collection 
+  // when a new list view is created adds a listener to when the Collection
   // adds another model also calls addAll function on itself
   initialize: function(){
     this.listenTo(this.collection, 'add', this.addOne)
@@ -235,13 +235,3 @@ Success! We now have a functional app that can post reminders and delete them as
 <img src="/images/backbone_success.png">
 
 Toy around with it, create and delete some reminders. I encourage you to dive into the JS and play around with it, maybe add some more attributes add some filtering or editing capabilities. Backbone documentation can be found [here](http://backbonejs.org/) Thanks for reading!
-
-
-
-
-
-
-
-
-
-

@@ -134,8 +134,8 @@ class Person
   end
 end
 
-bob = Person.new("bob", 52, "male")
-erica = Person.new("erica", 25, "female")
+bob = Person.new("bob", 52, "male", "DC")
+erica = Person.new("erica", 25, "female", "NY")
 bob.say_hello
 erica.say_hello
 {% endhighlight %}

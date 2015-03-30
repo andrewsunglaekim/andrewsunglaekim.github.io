@@ -20,7 +20,7 @@ The code can be found [here](https://github.com/andrewsunglaekim/week1project)
 
 
 ## [Drizz.ly](https://drizzly.herokuapp.com/)
-<a href='https://drizzly.herokuapp.com/' target='_blank'>Drizzly</a><img src="/images/drizzly.png"></a>
+<a href='https://drizzly.herokuapp.com/' target='_blank'><img src="/images/drizzly.png"></a>
 
 > Drizzly was a group mini project that we developed in less than 12 hours. It's built on Rails and utilizes the weather underground API. After about a week of instruction on javascript, our group utilized the newly garnered asset to make a single page app that gives weather information based on search parameters and/or IP location. My role in the group was to handle user authentication/backend data. I also synced the backend with the front end using JS.
 

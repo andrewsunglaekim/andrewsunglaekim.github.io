@@ -225,6 +225,6 @@ Running this command should startup pry(ruby REPL). I encourage you to use the R
 - Patient.last.appointments
 - Patient.last.doctors
 
-> Note that the only patients that are associated with a single doctor are ones in which the doctor has an appointment with the patient and vice versa.
+> Note that the only patients that are associated with a single doctor are ones in which the doctor has an appointment with the patient and vice versa. A doctor and a patient are only associated in so far as that they must have an appointment that belongs to both of them.
 
 Hopefully, this post can shed some light on the has_many through association.

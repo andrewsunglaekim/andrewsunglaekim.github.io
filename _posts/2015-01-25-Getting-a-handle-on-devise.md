@@ -137,7 +137,7 @@ end
 Lets run the migration in the terminal:
 
 {% highlight bash %}
-rake db:migrate
+$ rake db:migrate
 {% endhighlight %}
 
 Now shove all the following code into `app/controllers/posts_controller.rb` its going to include some devise helper methods like <code>current_user</code> and `authenticate_user!`:
@@ -214,7 +214,7 @@ end
 Now lets make a view in the terminal:
 
 {% highlight bash %}
-	touch app/views/posts/index.html.erb
+$ touch app/views/posts/index.html.erb
 {% endhighlight %}
 
 and fill it with some barebones content in `app/views/posts/index.html.erb`:

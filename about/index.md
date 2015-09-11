@@ -10,7 +10,7 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-I'm a full stack web developer. Passionate about new technologies and striving to learn as much as possible. Currently a Junior Instructor for the Web Development Immersive at General Assembly.
+Passionate full stack web developer and teacher with strong interpersonal skills that enables others and myself to achieve results and exceed expectations.
 
 ## Resume
 [My Resume]({{ site.url }}/assets/andrew_kim_resume.pdf)
@@ -21,11 +21,16 @@ I'm a full stack web developer. Passionate about new technologies and striving t
 * Ruby on Rails/Active Record ORM
 * Sinatra
 * Wordpress
+* nodeJS
+* expressJS
+* ASP .net MVC
 * Git
 * Rspec/Minitest/Jasmine
-* SQL/postgreSQL
-*	Javascript/jQuery/AJAX
+* SQL/postgreSQL/Sequelize
+*	Javascript
+* jQuery/AJAX
 * Backbone JS
+* Angular JS
 * HTML/CSS
 * SASS/SCSS
 * CLI

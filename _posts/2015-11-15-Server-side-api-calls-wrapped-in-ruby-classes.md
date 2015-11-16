@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server side api calls wrapped in ruby classes
+title: Server Side Api Calls Wrapped in Ruby Classes
 excerpt: "Make server side api calls, wrap that JSON in a ruby class"
 ---
 

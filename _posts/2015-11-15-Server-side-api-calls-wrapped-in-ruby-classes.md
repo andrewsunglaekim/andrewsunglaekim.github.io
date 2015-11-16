@@ -169,6 +169,6 @@ If we enter `Miami` for the city and `Fl` for the state we'll see this sort of r
 
 <img src="/images/params_weather.png">
 
-> You're results may very as this API is updated relatively frequently. Whats cool is that this data is a real time reflecting of the API when the request was made. Every time we click on `Submit` we get that information from the API.
+> You're results may very as this API is updated relatively frequently. Whats cool is that this data is a real time reflection of the API when the request was made. Every time we click on `Submit` we get that information from the API.
 
 This is a very small example of how we can leverage API and ruby classes to encapsulate data from JSON responses. If you have a JSON endpoint that has data you want to access, then you can create a ruby class to encapsulate that data into objects. Limitless possibilities.

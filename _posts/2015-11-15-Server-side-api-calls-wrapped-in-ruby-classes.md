@@ -67,7 +67,7 @@ So we need to define the `Forecast` model... We'll be utilizing the `httparty` g
 After signing up and validating email, agree to term and sign in. Once there, click on pricing(don't worry its free!). Make sure you click on the stratus plan(the free one, but still great!) and then click on purchase key. Fill out the form and purchase a key. If you then click on the documentation tab you'll see a url somewhere in the middle of the page like this:
 
 {% highlight bash %}
-http://api.wunderground.com/api/<your key here>/conditions/q/CA/San_Francisco.json`
+http://api.wunderground.com/api/<your key here>/conditions/q/CA/San_Francisco.json
 {% endhighlight %}
 
 If we visit that link we'll see something like this:

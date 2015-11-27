@@ -6,7 +6,7 @@ excerpt: "Make server side api calls, wrap that JSON in a ruby class"
 
 There's a lot of information out there on the web packaged in API's. Ridiculous amounts. Using rails, we can access a large portion of that information by making server side API calls. Also, we can encapsulate objects into ruby classes to provide an interface for that data in our views.
 
-> In this blog post, we'll be utilizing the [weather underground api](www.wunderground.com/weather/api/) to create a simple app that gets current weather and temperature when you enter in a city and state. You can fork an example of this app, [Quick Weather.ly](https://github.com/ga-dc/rails_weather_api). A general understanding of [ruby classes](http://andrewsunglaekim.github.io/OOP-There-It-Is/) and [rails](http://guides.rubyonrails.org/getting_started.html) will be needed to follow this blog.
+> In this blog post, we'll be utilizing the [weather underground api](https://www.wunderground.com/weather/api/) to create a simple app that gets current weather and temperature when you enter in a city and state. You can fork an example of this app, [Quick Weather.ly](https://github.com/ga-dc/rails_weather_api). A general understanding of [ruby classes](http://andrewsunglaekim.github.io/OOP-There-It-Is/) and [rails](http://guides.rubyonrails.org/getting_started.html) will be needed to follow this blog.
 
 Let start by creating a brand new rails application:
 
@@ -137,7 +137,7 @@ end
 
 > If there are parameters for a city and state, it will create a new forecast based on that city and state. If there isn't parameter values being passed in, then it will create a default forecast of Washington, DC.
 
-Before we test this route at, let's actually create the view that will have the form for city and state.
+Before we test this route out, let's actually create the view that will have the form for city and state.
 
 {% highlight bash %}
 $ mkdir app/views/weather

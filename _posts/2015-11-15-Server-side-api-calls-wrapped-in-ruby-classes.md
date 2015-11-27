@@ -4,7 +4,7 @@ title: Server Side Api Calls Wrapped in Ruby Classes
 excerpt: "Make server side api calls, wrap that JSON in a ruby class"
 ---
 
-There's a lot of information out their on the web packaged in API's. Ridiculous amounts. Using rails, we can access a large portion of that information by making server side API calls. Also, we can encapsulate objects into ruby classes to provide an interface for that data in our views.
+There's a lot of information out there on the web packaged in API's. Ridiculous amounts. Using rails, we can access a large portion of that information by making server side API calls. Also, we can encapsulate objects into ruby classes to provide an interface for that data in our views.
 
 > In this blog post, we'll be utilizing the [weather underground api](www.wunderground.com/weather/api/) to create a simple app that gets current weather and temperature when you enter in a city and state. You can fork an example of this app, [Quick Weather.ly](https://github.com/ga-dc/rails_weather_api). A general understanding of [ruby classes](http://andrewsunglaekim.github.io/OOP-There-It-Is/) and [rails](http://guides.rubyonrails.org/getting_started.html) will be needed to follow this blog.
 

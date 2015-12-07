@@ -176,6 +176,7 @@ for(var i = 0; i < authors.length; i++){
       console.log("author was saved")
     }
   })
+}
 {% endhighlight %}
 
 In order to run this file and seed our database we run this command:

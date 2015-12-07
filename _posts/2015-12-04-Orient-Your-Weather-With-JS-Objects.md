@@ -34,6 +34,7 @@ $ mkdir wunderground_oojs
 $ cd wunderground_oojs
 $ mkdir models
 $ mkdir views
+$ mkdir js
 $ touch index.html
 $ touch js/script.js
 $ touch js/models/forecast.js
